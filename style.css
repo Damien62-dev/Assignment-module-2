@@ -1,0 +1,423 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    /* Removes default margins */
+    padding: 0;
+    /* Removes default padding */
+
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+    /* Centers text horizontally */
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    /* Main font */
+    line-height: 1.6;
+    /* Line spacing (1.6x font size) */
+    color: #222;
+    /* Dark gray text */
+    background: linear-gradient(135deg, #157145, #28527a);
+    /* Diagonal gradient (green to blue) */
+    min-height: 100vh;
+    /* Minimum height of 100% viewport */
+}
+
+/* Header Navigation */
+nav {
+    background: white;
+    /* White background */
+    padding: 1rem;
+    /* Internal spacing 1rem (16px) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Drop shadow below nav */
+    display: flex;
+    /* Flexbox horizontal alignment */
+    justify-content: space-between;
+    /* Space between elements (logo left, buttons right) */
+    align-items: center;
+    /* Vertically centers elements */
+    flex-wrap: wrap;
+    /* Wraps to new line on small screens */
+}
+
+nav h1 {
+    color: #157145;
+    /* Green color */
+    font-size: 1.5rem;
+    /* Font size 24px */
+    display: flex;
+    /* Flexbox for logo and text */
+    align-items: center;
+    /* Vertically centers logo and text */
+    gap: 10px;
+    /* 10px space between logo and text */
+}
+
+.logo {
+    height: 70px;
+    /* Fixed height for logo */
+}
+
+.nav-container {
+    display: flex;
+    /* Flexbox for navigation buttons */
+    gap: 1rem;
+    /* 1rem space between buttons */
+    flex-wrap: wrap;
+    /* Wraps buttons to new line if needed */
+}
+
+.nav-btn {
+    background: #28527a;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Removes default border */
+    padding: 0.8rem 1.3rem;
+    /* Vertical 0.8rem, horizontal 1.3rem */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background 0.3s;
+    /* Smooth background color transition */
+    flex: auto;
+    /* Buttons adapt to available space */
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    background: #157145;
+    /* Green background on hover/active */
+}
+
+/* Main Sections */
+section {
+    display: none;
+    /* Hides all sections by default */
+    max-width: 800px;
+    /* Maximum content width */
+    margin: 2rem auto;
+    /* 2rem top/bottom, auto horizontal centering */
+    padding: 2rem;
+    /* Internal spacing 2rem */
+    background: white;
+    /* White background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Drop shadow */
+}
+
+section.active {
+    display: block;
+    /* Shows only active section */
+}
+
+section h2 {
+    color: #157145;
+    /* Green color */
+    margin-bottom: 1rem;
+    /* 1rem margin below */
+    font-size: 2rem;
+    /* Font size 32px */
+}
+
+/* Home Section */
+.ready-play {
+    display: block;
+    /* Block display */
+    margin: 1rem auto;
+    /* 1rem top/bottom, auto horizontal centering */
+    background: #ff6b6b;
+    /* Red/pink background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Removes border */
+    padding: 1rem 2rem;
+    /* Vertical 1rem, horizontal 2rem */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    font-size: 1rem;
+    /* Font size 16px */
+}
+
+/* Rules Section */
+#rules ul {
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    /* Removes padding */
+}
+
+#rules li {
+    background: #ddf6e8;
+    /* Light green background */
+    margin: 0.5rem 0;
+    /* 0.5rem top/bottom margin */
+    padding: 1rem;
+    /* 1rem internal spacing */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Score Tracker Section */
+.score-board {
+    display: grid;
+    /* CSS grid mode */
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 2rem;
+    /* 2rem space between columns */
+    margin: 2rem 0;
+    /* 2rem top/bottom margin */
+    text-align: center;
+    /* Centers text */
+}
+
+.player {
+    background: #ddf6e8;
+    /* Light green background */
+    padding: 1.5rem;
+    /* 1.5rem internal spacing */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.score {
+    font-size: 3rem;
+    /* Large font 48px */
+    font-weight: bold;
+    /* Bold text */
+    color: #157145;
+    /* Green color */
+    margin: 1rem 0;
+    /* 1rem top/bottom margin */
+}
+
+.player button {
+    background: #28527a;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Removes border */
+    padding: 0.5rem 1rem;
+    /* Vertical 0.5rem, horizontal 1rem */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    font-size: 1rem;
+    /* Font size 16px */
+}
+
+.reset-btn {
+    display: block;
+    /* Block display */
+    margin: 1rem auto;
+    /* 1rem top/bottom, auto horizontal centering */
+    background: #ff6b6b;
+    /* Red/pink background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Removes border */
+    padding: 0.75rem 1.5rem;
+    /* Vertical 0.75rem, horizontal 1.5rem */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    font-size: 1rem;
+    /* Font size 16px */
+}
+
+#winner {
+    font-size: 1.2rem;
+    /* Font size 19.2px */
+    font-weight: bold;
+    /* Bold text */
+    margin-top: 1rem;
+    /* 1rem top margin */
+    color: #157145;
+    /* Green color */
+}
+
+/* Events Section */
+#events h2 a {
+    color: #157145;
+    /* Green color for links */
+    margin-bottom: 1rem;
+    /* 1rem bottom margin */
+    font-size: 2rem;
+    /* Font size 32px */
+    text-decoration: none;
+    /* Removes underline */
+}
+
+.countdown {
+    display: flex;
+    /* Flexbox mode */
+    justify-content: space-evenly;
+    /* Evenly distributes space */
+    text-align: center;
+    /* Centers text */
+}
+
+.countdown h3.day,
+.countdown h3.hour,
+.countdown h3.minute,
+.countdown h3.second {
+    font-size: 2.5em;
+    /* Large font 40px */
+    margin: 0;
+    /* Removes margins */
+    font-weight: bold;
+    /* Bold text */
+    color: #157145;
+    /* Green color */
+    background: #ddf6e8;
+    /* Light green background */
+    padding: 10px;
+    /* 10px internal spacing */
+    border-radius: 10px;
+    /* Rounded corners */
+    width: 80px;
+    /* Fixed width */
+    text-align: center;
+    /* Centers text */
+}
+
+.container-day h3,
+.container-hour h3,
+.container-minute h3,
+.container-second h3 {
+    margin-top: 0.5rem;
+    /* 0.5rem top margin */
+    color: #222;
+    /* Dark gray color */
+}
+
+/* Contact Section */
+#myForm {
+    display: flex;
+    /* Flexbox mode */
+    flex-direction: column;
+    /* Vertical arrangement */
+    gap: 1rem;
+    /* 1rem space between elements */
+    max-width: 500px;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Horizontally centers form */
+}
+
+#myForm input,
+#myForm textarea {
+    padding: 0.75rem;
+    /* 0.75rem internal spacing */
+    border: 2px solid #ddd;
+    /* 2px light gray border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Font size 16px */
+}
+
+#myForm input:focus,
+#myForm textarea:focus {
+    outline: none;
+    /* Removes default outline */
+    border-color: #28527a;
+    /* Blue border on focus */
+}
+
+#myForm button {
+    background: #28527a;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Removes border */
+    padding: 0.75rem;
+    /* 0.75rem internal spacing */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    font-size: 1rem;
+    /* Font size 16px */
+}
+
+#myForm button:hover {
+    background: #157145;
+    /* Green background on hover */
+}
+
+.success {
+    color: green;
+    /* Green text for success messages */
+}
+
+.error {
+    color: red;
+    /* Red text for error messages */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    /* For screens 768px or less */
+    nav {
+        flex-direction: column;
+        /* Vertical navigation on mobile */
+        gap: 1rem;
+        /* 1rem space between elements */
+    }
+
+    .score-board {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+        gap: 1rem;
+        /* 1rem space between elements */
+    }
+
+    section {
+        margin: 1rem;
+        /* Reduces margins on mobile */
+        padding: 1rem;
+        /* Reduces padding on mobile */
+    }
+
+    .score {
+        font-size: 2rem;
+        /* Smaller score on mobile */
+    }
+
+    .countdown {
+        flex-direction: column;
+        /* Vertical countdown on mobile */
+        align-items: center;
+        /* Centers items */
+    }
+
+    .countdown h3.day,
+    .countdown h3.hour,
+    .countdown h3.minute,
+    .countdown h3.second {
+        width: 100px;
+        /* Wider for mobile readability */
+        font-size: 2rem;
+        /* Slightly smaller font on mobile */
+    }
+}

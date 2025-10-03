@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pong Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <H1><img src="Logo3.png" alt="Logo Pong Hub" class="logo"> The Pong Hub</H1>
+            <div class="nav-container">
+                <button class="nav-btn active" onclick="showSection('home')">Home</button>
+                <button class="nav-btn" onclick="showSection('rules')">Rules</button>
+                <button class="nav-btn" onclick="showSection('score')">Score Tracker</button>
+                <button class="nav-btn" onclick="showSection('events')">Events</button>
+                <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home section -->
+        <section id="home" class="active">
+            <h2 class="text-center">Welcome to the Pong Hub</h2>
+            <p class="text-center">Your simple destination for ping pong basics!</p>
+            <button class="ready-play" onclick="showSection('score')">Ready to play ?</button>
+            </button>
+        </section>
+
+        <!-- Rule section -->
+        <section id="rules">
+            <h2 class="text-center">Understand the basic rules!</h2>
+            <ul>
+                <li><strong>Serving:</strong> You can serve from anywhere and to anywhere on the table</li>
+                <li><strong>Scoring:</strong> Winner is the first to 11 points, win by 2</li>
+                <li><strong>Let:</strong> If the ball touches the net and goes over, it's a 'let' – retake the serve
+                </li>
+                <li><strong>Alternating:</strong> Serve changes every 2 points</li>
+            </ul>
+        </section>
+
+        <!-- Score tracter section -->
+        <section id="score">
+            <h2 class="text-center">Score Tracker - Let's play!</h2>
+            <div class="score-board">
+                <div class="player">
+                    <h3>Player 1</h3>
+                    <div class="score" id="score1">0</div>
+                    <button onclick="addPoint(1)">+1</button>
+                </div>
+                <div class="player">
+                    <h3>Player 2</h3>
+                    <div class="score" id="score2">0</div>
+                    <button onclick="addPoint(2)">+1</button>
+                </div>
+            </div>
+            <button class="reset-btn" onclick="resetScore()">Reset Game</button>
+            <div id="winner" class="text-center"></div>
+        </section>
+
+        <section id="events" <div>
+            <h2 class="text-center"><a href="https://www.worldtabletennis.com/eventInfo?eventId=3112"> WTT Finals
+                    Hong Kong - 10 Dec -
+                    14
+                    Dec 2025</a></h2>
+            <div class="countdown">
+
+                <div class="container-day">
+                    <h3 class="day">time</h3>
+                    <h3>Days</h3>
+                </div>
+
+                <div class="container-hour">
+                    <h3 class="hour">time</h3>
+                    <h3>Hours</h3>
+                </div>
+
+                <div class="container-minute">
+                    <h3 class="minute">time</h3>
+                    <h3>Minutes</h3>
+                </div>
+
+                <div class="container-second">
+                    <h3 class="second">time</h3>
+                    <h3>Seconds</h3>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+
+        <section id="contact">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center"> Have a question about a rule or feedback on the site? Drop us a line! </p>
+            <br>
+            <form id="myForm" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result" class="text-center"></div>
+        </section>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
