@@ -391,7 +391,7 @@ This project is created for educational purposes as part of a web development co
 
 ---
 
-**Document Version:** 1.0  
+**Document Version:** 2.0  
 **Last Updated:** October 2025  
 **Project Status:** ✅ Complete and Deployed  
 **Author:** Damien Mullet

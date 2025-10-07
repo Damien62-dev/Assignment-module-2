@@ -427,7 +427,7 @@ The project achieves its primary goal of bridging amateur play and professional 
 
 ---
 
-**Document Version:** 1.0  
+**Document Version:** 2.0  
 **Date:** October 2025  
 **Author:** Damien Mullet  
 **Project:** The Pong Hub - Interactive Table Tennis Web Application  
