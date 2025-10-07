@@ -27,11 +27,11 @@ function showSection(sectionID, buttonIndex) {
     }
 }
 
-// Variables pour les scores
+// Variables for scores
 let score1 = 0;
 let score2 = 0;
 
-// Fonction pour ajouter un point
+// Function to add a point to a player
 function addPoint(player) {
     // Ajouter 1 point au joueur
     if (player === 1) {
@@ -40,29 +40,29 @@ function addPoint(player) {
         score2 = score2 + 1;
     }
 
-    // Mettre à jour l'affichage des scores
+    // Update the score display
     document.getElementById('score1').textContent = score1;
     document.getElementById('score2').textContent = score2;
 
-    // Vérifier s'il y a un gagnant
+    // Check if there's a winner
     checkWinner();
 }
 
-// Fonction pour recommencer le jeu
+// Function to reset the scores
 function resetScore() {
     // Remettre les scores à 0
     score1 = 0;
     score2 = 0;
 
-    // Réafficher les scores
+    // refresh the score display
     document.getElementById('score1').textContent = '0';
     document.getElementById('score2').textContent = '0';
 
-    // Effacer le message de victoire
+    // delete the winner message
     document.getElementById('winner').textContent = '';
 }
 
-// Fonction pour voir qui a gagné
+// Function to check for a winner
 function checkWinner() {
     // Calculer la différence
     let difference1 = score1 - score2;
