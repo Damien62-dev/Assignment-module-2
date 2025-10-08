@@ -705,16 +705,6 @@ Clicks external link to WTT website
 ✅ **Alt text:** Logo image includes descriptive alt attribute  
 ✅ **Form labels:** All inputs associated with label elements
 
-### 10.2 Potential Improvements for Future
-
-🔲 **ARIA labels** for screen reader users (aria-label, aria-labelledby)  
-🔲 **Skip navigation link** for keyboard-only users  
-🔲 **Focus management** when switching sections (programmatically move focus)  
-🔲 **Announce section changes** to screen readers (aria-live regions)  
-🔲 **Improved color contrast** verification (WCAG AAA standard)  
-🔲 **Reduced motion support** for users with vestibular disorders
-
----
 
 ## Conclusion
 
@@ -729,7 +719,7 @@ The structure balances simplicity with functionality, creating an efficient, mai
 
 ---
 
-**Document Version:** 2.0  
+**Document Version:** 1.2
 **Date:** October 2025  
 **Author:** Damien Mullet  
 **Project:** The Pong Hub - Interactive Table Tennis Web Application  

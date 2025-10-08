@@ -385,13 +385,7 @@ This project is created for educational purposes as part of a web development co
 
 ---
 
-**⭐ Educational Project - Web Development Module 2**
-
-🏓 **Track your game, learn the rules, follow the pros!** 🏓
-
----
-
-**Document Version:** 2.0  
+**Document Version:** 1.2 
 **Last Updated:** October 2025  
 **Project Status:** ✅ Complete and Deployed  
 **Author:** Damien Mullet

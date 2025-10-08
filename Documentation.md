@@ -1100,7 +1100,7 @@ As my first comprehensive technical documentation experience with minimal formal
 
 ---
 
-**Document Version:** 1.0  
+**Document Version:** 1.1  
 **Date:** October 2025  
 **Author:** Damien Mullet  
 **Project:** The Pong Hub - Interactive Table Tennis Web Application  
