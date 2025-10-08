@@ -1,6 +1,6 @@
 
 // Navigation function
-function showSection(sectionID, buttonIndex) {
+function showSection(sectionID) {
 
     // Hide all sections
     const sections = document.querySelectorAll('section');
