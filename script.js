@@ -33,7 +33,7 @@ let score2 = 0;
 
 // Function to add a point to a player
 function addPoint(player) {
-    // Ajouter 1 point au joueur
+    // Add one point to the selected player
     if (player === 1) {
         score1 = score1 + 1;
     } else {
@@ -50,7 +50,7 @@ function addPoint(player) {
 
 // Function to reset the scores
 function resetScore() {
-    // Remettre les scores à 0
+    // Reset scores to zero
     score1 = 0;
     score2 = 0;
 
@@ -64,7 +64,7 @@ function resetScore() {
 
 // Function to check for a winner
 function checkWinner() {
-    // Calculer la différence
+    // Calculate the score differences
     let difference1 = score1 - score2;
     let difference2 = score2 - score1;
 
