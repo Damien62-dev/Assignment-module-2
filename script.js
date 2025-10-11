@@ -68,13 +68,13 @@ function checkWinner() {
     let difference1 = score1 - score2;
     let difference2 = score2 - score1;
 
-    // Chercher le gagnant
+    // Check the winner conditions
     if (score1 >= 11 && difference1 >= 2) {
         document.getElementById('winner').textContent = 'Player 1 Wins!';
     } else if (score2 >= 11 && difference2 >= 2) {
         document.getElementById('winner').textContent = 'Player 2 Wins!';
     } else {
-        // Pas de gagnant pour l'instant
+        // No winner yet
         document.getElementById('winner').textContent = '';
     }
 }
