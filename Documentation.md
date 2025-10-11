@@ -27,7 +27,8 @@ The AI assisted by:
 **All substantive content** (design choices, technical explanations, challenges faced, solutions implemented) **reflects my actual development experience** and understanding. The AI served as an organizational and educational assistant, similar to consulting documentation guides or mentorship.
 
 **Code Comments:**  
-CSS comments were generated with AI assistance for educational purposes, helping me understand each property's function during the learning process. JavaScript comments are a mix of my own notes and AI-generated explanations for learning.
+- **CSS comments**: Generated with AI assistance for educational purposes, written in English following web development conventions
+- **JavaScript comments**: Initially written in French (my native language), then translated to English for consistency and professional standards. Mix of personal notes and AI-generated explanations for learning purposes.
 
 **Development Tools:**  
 During coding, various learning tools were used:
@@ -1100,7 +1101,7 @@ As my first comprehensive technical documentation experience with minimal formal
 
 ---
 
-**Document Version:** 1.1  
+**Document Version:** 1.2  
 **Date:** October 2025  
 **Author:** Damien Mullet  
 **Project:** The Pong Hub - Interactive Table Tennis Web Application  
