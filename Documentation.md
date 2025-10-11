@@ -1052,14 +1052,6 @@ This project demonstrates:
 - Code quality and standards compliance (W3C validation)
 - Self-awareness and continuous improvement mindset
 
-**Transferable Skills:**
-Beyond technical implementation, this project developed:
-- Project planning and execution
-- Time management under deadlines
-- Self-directed learning and research
-- Documentation and communication
-- Quality assurance and testing discipline
-
 ---
 
 ## 9. Conclusion
@@ -1096,7 +1088,7 @@ As my first comprehensive technical documentation experience with minimal formal
 
 ---
 
-**Document Version:** 1.2  
+**Document Version:** 1.3 
 **Date:** October 2025  
 **Author:** Damien Mullet  
 **Project:** The Pong Hub - Interactive Table Tennis Web Application  
